@@ -1,10 +1,10 @@
-/* Reset e importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* Configurações gerais */
+/* Resetando a página */
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -14,14 +14,22 @@ html {
 
 body {
     height: 100%;
-    background-color: #fafafa;
-    font-family: 'Inter', sans-serif;
-    line-height: 1.6;
+    background-color: #0a7b5b27;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Variáveis */
+:root {
+    --cor0: #ee5370;
+    --cor1: #C9B79C;
+    --cor2: #55704e;
+    --cor3: #9e978d;
+    --cor4: #2e3132;
 }
 
 /* Header */
 .cabecalho {
-    color: #000;
+    color: #11655abe;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -31,16 +39,16 @@ body {
 }
 
 .cabecalho .lg {
-    color: #000;
+    color: #000000a2;
     text-decoration: none;
-    border: 2px solid rgba(140, 179, 223, 0.801);
+    border: 2px solid rgba(221, 42, 146, 0.801);
     padding: 5px 10px;
     border-radius: 5px;
 }
 
 .cabecalho .lg:hover,
 .cabecalho .lg:active {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
 }
 
 /* Menu */
@@ -65,284 +73,302 @@ body {
 
 .menu li a:hover {
     background-color: rgba(140, 179, 223, 0.1);
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
 }
 
-/* Sessões */
-.main {
-    padding: 20px;
+/* Main */
+
+/* Perfil */
+.perf h2 {
+    margin-top: 30px;
+    margin-left: 70px;
+    color: var(--cor0);
 }
 
-.main h2 {
-    color: rgba(140, 179, 223, 0.801);
-    text-align: center;
+.perf hr {
+    margin-left: 70px;
+    color: var(--cor0);
+    margin-right: 60px;
 }
 
-.main hr {
-    border: 0;
-    height: 2px;
-    background-color: rgba(140, 179, 223, 0.801);
-    margin: 10px 0;
-}
-
-/* Carousel */
-.carousel-section h2 {
-    margin-top: 60px; 
-}
-
-.carousel-section {
-    padding: 20px 0;
-}
-
-.carousel-inner img {
-    height: 400px;
-    object-fit: cover;
-}
-
-/* Footer */
-.rodape {
-    text-align: center;
-    padding: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.rodape p {
-    color: #000;
-}
-
-/* Estilo para os cards de projetos */
-.projects-section h2 {
-    margin-top: 60px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
-}
-
-.projects-section .card {
-    border: none;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-.projects-section .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.projects-section .card-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.projects-section .card-text {
-    color: #6c757d;
-    margin-bottom: 15px;
-}
-
-.projects-section .btn-primary {
-    background-color: rgba(140, 179, 223, 0.801);
-    border-color: rgba(140, 179, 223, 0.801);
-    transition: background-color 0.3s ease-in-out;
-}
-
-.projects-section .btn-primary:hover {
-    background-color: #6e8cb6;
-    border-color: #6e8cb6;
-}
-
-
-/* Estilo para a área "Sobre Mim" */
-.about-section {
+.imagem-texto {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-section img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 4px solid rgba(140, 179, 223, 0.8);
-    /* Corrigindo a borda */
+.imagem-texto img {
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-left: 70px;
 }
 
-.about-section .text-content {
-    max-width: 600px;
-    margin: 0 auto;
+.texto {
+    color: var(--cor2);
+    margin-right: 40px;
 }
 
-.about-section h3 {
+.texto h3 {
+    color: var(--cor0);
+}
+
+.redes-sociais {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.redes-sociais i {
+    color: var(--cor2);
     font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+    margin: 5px;
 }
 
-.about-section p {
-    color: #6c757d;
-    line-height: 1.5;
+.redes-sociais i:hover {
+    color: var(--cor1);
 }
 
-/* Adicione estas regras para ajustar o ícone de seguidores */
-.info-icons {
-    margin-top: 10px; /* Ajusta o espaçamento entre o texto e o ícone */
-  }
-  
-  .followers {
-    display: flex;
-    align-items: center;
-    margin-top: 10px; /* Ajusta o espaçamento entre o ícone e o texto */
-  }
-  
-  .followers i {
-    font-size: 20px; /* Diminui o tamanho do ícone */
-    margin-right: 5px; /* Espaçamento à direita do ícone */
-  }
-  
-
-.about-section .info-icons {
+.icones {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.about-section .info-text {
-    flex: 1;
-    text-align: left;
-}
-
-.about-section .info-text p {
-    margin-bottom: 10px;
-}
-
-/* Estilo para os ícones e texto de seguidores */
-.info-icons {
+.comp {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-top: 20px; /* Espaçamento acima do ícone */
+    align-items: center;
+    margin-right: 20px;
 }
 
-.followers {
-    display: flex;
-    align-items: center; /* Alinha verticalmente */
+.comp i {
+    margin-right: 5px;
+    color: var(--cor0);
 }
 
-.followers i {
-    font-size: 20px; /* Tamanho do ícone */
-    margin-right: 5px; /* Espaçamento à direita do ícone */
+/* Repositório */
+.repos h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: var(--cor2);
 }
 
-.followers span {
-    font-size: 16px; /* Tamanho do texto */
-    color: #6c757d; /* Cor do texto */
-    font-weight: 500; /* Peso da fonte */
-    margin-bottom: 0; /* Remove o espaçamento abaixo do texto */
-    margin-left: 5px; /* Espaçamento à esquerda do texto */
+.repos hr {
+    margin-left: 20px;
+    color: var(--cor0);
+    margin-right: 20px;
 }
 
-
-.about-section .social-links {
-    margin-top: 20px;
+.repos {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.about-section .social-links a {
-    color: #6c757d;
+.cardss {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Conteúdo Sugerido */
+.carrosel {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.carrosel h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: var(--cor2);
+}
+
+.carrosel hr {
+    margin-left: 20px;
+    color: var(--cor0);
+    margin-right: 20px;
+}
+
+.carousel-item img {
+    max-width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 350px;
+}
+
+/* Colegas de trabalho */
+.colegas {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.colegas h2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    color: var(--cor2);
+}
+
+.colegas hr {
+    margin-left: 20px;
+    color: var(--cor0);
+    margin-right: 20px;
+}
+
+.trabalho {
+    text-align: center;
+}
+
+.colega {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.colega h3 a {
+    text-decoration: none;
     font-size: 20px;
-    margin-right: 10px;
+    color: var(--cor2);
 }
 
-.about-section .social-links a:hover {
-    color: rgba(140, 179, 223, 0.8);
+.colega h3 a:hover {
+    color: var(--cor0);
 }
 
-/* Estilo ajustado para os cards da equipe */
-.team-section h2 {
-    margin-top: 60px; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+.colega img {
+    border-radius: 3px;
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
 }
 
-.team-section {
-    padding: 20px 0;
-    background-color: #f8f9fa;
-  }
-  
-  .team-section h2 {
-    color: rgba(140, 179, 223, 0.801);
+.card {
+    width: 255px; /* Adjust the width as needed */
+    margin: auto;
+}
+
+/* Rodapé */
+.rodape p {
     text-align: center;
-  }
-  
-  .team-section hr {
-    border: 0;
-    height: 2px;
-    background-color: rgba(140, 179, 223, 0.801);
-    margin: 10px 0;
-  }
-  
-  .team-section .card {
-    border: none;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-  }
-  
-  .team-section .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .team-section .card img {
-    height: 390px; 
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .team-section .card-title {
-    font-size: 18px;
-    color: #333;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .team-section .btn-primary {
-    background-color: rgba(140, 179, 223, 0.801);
-    border-color: rgba(140, 179, 223, 0.801);
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .team-section .btn-primary:hover {
-    background-color: #6e8cb6;
-    border-color: #6e8cb6;
-  }
-  @media only screen and (max-width: 768px) {
-    .cabecalho {
+    color: var(--cor2);
+}
+
+.rodape hr {
+    margin-left: 20px;
+    color: var(--cor0);
+    margin-right: 20px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    /* Perfil */
+    .perf h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .perf hr {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .imagem-texto {
         flex-direction: column;
         align-items: center;
     }
 
-    .cabecalho .lg {
+    .imagem-texto img {
+        margin-top: 10px;
         margin-left: 0;
-        margin-bottom: 20px; /* Espaçamento inferior */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
-    .menu {
-        margin-top: 20px; /* Espaçamento superior */
-        align-items: center;
+    .texto {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .menu li {
-        margin: 6px;
-        font-size: 18px; /* Tamanho da fonte ajustado */
-        margin-left: auto;
-        margin-right: 20px;
+    .texto p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Repositório */
+    .cardss {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Colegas de trabalho */
+    .colegas {
+        text-align: center;
+    }
+
+    .colega {
+        margin: 10px auto;
+        margin-right: 15px;
+        text-align: center;
+    }
+
+    /* Carrossel */
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Subtítulos */
+    .perf h2,
+    .repos h2,
+    .carrosel h2,
+    .colegas h2 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    /* Linha */
+    .carrosel hr,
+    .repos hr,
+    .colegas hr,
+    .rodape
+    .carrosel hr,
+    .repos hr,
+    .colegas hr,
+    .rodape hr {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .main h2,
-    .main hr {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+/* Cards dos repositórios */
+.repo-card {
+    width: 600px; /* ajuste conforme necessário */
+    margin: 5px auto; /* centraliza os cards */
+    text-align: left;
+}
+
+.repo-card .card-body {
+    padding: 20px;
+}
+
+.repo-card .card-title {
+    font-size: 20px; /* ajuste conforme necessário */
+}
+
+.repo-card .card-text {
+    font-size: 14px; /* ajuste conforme necessário */
+}
+
+.repo-card .btn {
+    font-size: 12px; /* ajuste conforme necessário */
+}
+
+/* Botões Personalizados */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }

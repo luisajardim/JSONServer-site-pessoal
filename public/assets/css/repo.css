@@ -14,22 +14,22 @@ html {
 
 body {
     height: 100%;
-    background-color: #fafafa;
-    font-family: 'Inter', sans-serif;
+    background-color:  #0a7b5b27;
+    font-family: 'Courier New', Courier, monospace
 }
 
 /* Header */
 .cabecalho {
-    color: #000;
+    color: #000000ce;
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .lg {
-    color: #000;
+    color: #00000084;
     text-decoration: none;
-    border: 2px solid rgba(140, 179, 223, 0.801);
+    border: 2px solid rgba(221, 42, 146, 0.801);
     padding: 5px 10px;
     border-radius: 5px;
     margin-left: 40px;
@@ -37,7 +37,7 @@ body {
 
 .lg:hover,
 .lg:active {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
 }
 
 .menu {
@@ -53,11 +53,11 @@ body {
 }
 
 .cabecalho .menu li a:hover {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
 }
 
 .cabecalho .menu li a {
-    color: #000;
+    color: #403e3e;
     text-decoration: none;
 }
 
@@ -81,12 +81,12 @@ body {
 
 .main hr {
     margin-left: 60px;
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-right: 60px;
 }
 
 .descricao h3 {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-left: 60px;
     font-size: 20px;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .detalhe h3 {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-left: 60px;
     font-size: 20px;
 }
@@ -147,7 +147,7 @@ body {
 }
 
 .linguagem h3 {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-left: 60px;
     font-size: 20px;
 }
@@ -166,7 +166,7 @@ body {
 }
 
 .link-acesso h3 {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-left: 60px;
     font-size: 20px;
 }
@@ -176,7 +176,7 @@ body {
 }
 
 .topicos h3 {
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-left: 60px;
     font-size: 20px;
 }
@@ -201,7 +201,7 @@ body {
 
 .rodape hr {
     margin-left: 20px;
-    color: rgba(140, 179, 223, 0.801);
+    color: rgba(221, 42, 146, 0.801);
     margin-right: 20px;
 }
 
